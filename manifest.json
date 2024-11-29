@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "UnBass Audio Filter",
+	"version": "1.0",
+	"description": "Apply a high-pass filter to web audio with an adjustable frequency.",
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "unbass16.png",
+			"48": "unbass48.png",
+			"128": "unbass128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	]
+}

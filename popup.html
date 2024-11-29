@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UnBass</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 10px;
+			}
+			#frequency-value {
+				font-size: 16px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>UnBass</h1>
+		<input
+			id="frequency-slider"
+			type="range"
+			min="20"
+			max="20000"
+			step="1"
+			value="1000"
+		/>
+		<div id="frequency-value">Frequency: 1000 Hz</div>
+		<script src="popup.js"></script>
+	</body>
+</html>
