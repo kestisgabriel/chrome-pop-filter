@@ -6,24 +6,51 @@
 			body {
 				font-family: Arial, sans-serif;
 				margin: 10px;
+				background-color: #b7d0df;
+				color: #433758;
+			}
+			h1 {
+				font-size: 18px;
+				text-align: center;
+				color: #433758;
+			}
+			#frequency-slider {
+				width: 100%;
+				margin-top: 20px;
 			}
 			#frequency-value {
-				font-size: 16px;
+				text-align: center;
 				margin-top: 10px;
+				font-size: 16px;
+				color: #433758;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100px;
+				width: 200px;
+				border: 2px solid #433758;
+				border-radius: 10px;
+				padding: 15px;
+				background-color: #fff;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>UnBass</h1>
-		<input
-			id="frequency-slider"
-			type="range"
-			min="20"
-			max="1000"
-			step="1"
-			value="20"
-		/>
-		<div id="frequency-value">Frequency: 20 Hz</div>
+		<div class="container">
+			<input
+				id="frequency-slider"
+				type="range"
+				min="20"
+				max="1000"
+				step="1"
+				value="20"
+			/>
+			<div id="frequency-value">Frequency: 20 Hz</div>
+		</div>
 		<script src="popup.js"></script>
 	</body>
 </html>
